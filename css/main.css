@@ -1,0 +1,307 @@
+body {
+    padding: 0px 50px 20px 50px;
+}
+
+.textarea {
+    resize: none;
+    padding: 5px 10px;
+}
+
+label {
+    display: inline-block;
+    vertical-align: top;
+}
+
+body>div {
+    vertical-align: top;
+}
+
+.hidden {
+    display: none!important;
+}
+
+.input {
+    min-width: 220px;
+}
+
+.wide {
+    min-width: 350px;
+}
+
+.modal{
+    text-align: center;
+}
+
+.item-actions{
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.file-loader-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.file-loader-wrapper .tree-validation-errors{
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    height: 136px;
+    resize: both;
+    overflow: scroll;
+    background-color: #EEE;
+    font-size: 13px;
+    padding: 5px 10px;
+    z-index: 999;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+}
+
+.file-loader-wrapper .tree-validation-errors div{
+    word-wrap: none;
+    white-space: nowrap;
+}
+
+.file-name {
+    min-width: 150px;
+}
+
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.dialogue-management-div{
+    border-bottom: 1px solid #AAA;
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dialogue-management-div > div{
+    flex-grow: 1;
+}
+
+.field {
+    vertical-align: top;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.npc-dialogue .show-delete-modal{ 
+    margin-top: 15px;
+}
+
+.help.bottom-error{
+    position: absolute;
+    bottom: -20px;
+    left : 20px;
+}
+.dialogue-tree-controls{
+    margin-top: 15px;
+}
+
+.dialogue-tree-controls .field{
+    margin-right: 0;
+}
+
+.dialogue-tree-controls .add-dialogue{
+    color: #23d160;
+    border: none;
+}
+
+.show-validation-errors{
+    border: 1px solid #ff3860;
+}
+
+.show-validation-errors:hover{
+    border: 1px solid #ff3860;
+}
+
+.show-validation-errors:hover span, .show-validation-errors:before{
+    color: #ff3860;
+}
+
+.show-validation-errors span{
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.dialogue-item{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.dialogue-item:first-child{
+    margin-top: 0;
+}
+
+.dialogue-item .subdialogue-id{
+    text-align: center;
+    color: #AAA;
+    cursor: default;
+    user-select: all;
+}
+
+.dialogue-item .dialogue-info-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.dialogue-item .dialogue-content{
+    position: relative;
+}
+
+.dialogue-item .item-actions > div{
+    padding: 6px 0;
+}
+
+.dialogue-item .dialogue-info {
+    display: inline-block;
+    border: 1px solid #AAA;
+    border-radius: 10px;
+    width: 260px;
+    padding: 7px;
+    margin: 0 5px 0px 25px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.dialogue-item .dialogue-info .icon{
+    margin-top: 5px;
+}
+
+.dialogue-item .dialogue-item-indicators{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 7px;
+}
+
+.dialogue-item .edit-dialogue-info {
+    cursor: default;
+    padding: 5px 15px;
+    position: relative;
+}
+
+.dialogue-item .edit-dialogue-info textarea{
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.dialogue-item .edit-dialogue-info .top-actions{
+    justify-content: space-between;
+    display: flex;
+}
+
+.dialogue-item .edit-dialogue-info .icon{
+    cursor: pointer;
+}
+
+.dialogue-item .edit-dialogue-info .icon.deselected{
+    color: #AAA;
+}
+
+.dialogue-item .edit-dialogue-info .dialogue-conditions{
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.dialogue-item .edit-dialogue-info .dialogue-conditions .new-condition-value{
+    min-width: 0;
+    width: auto;
+    box-shadow: none;
+    border: none;
+    width: 110px;
+}
+
+.dialogue-item .edit-dialogue-info .dialogue-conditions .new-condition-action{
+    background: none;
+    cursor: pointer;
+}
+
+.tags:last-child {
+    margin-bottom: 0;
+}
+
+.dialogue-item .edit-dialogue-info .dialogue-conditions .new-condition-value.is-danger{
+    background-color: inherit;
+    color: #ff3860;
+    border: solid 1px #ff3860;
+}
+
+.dialogue-tree{
+    position: relative;
+    overflow-x: auto;
+    user-select: none;
+    cursor: grab;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.icon-lock{
+    color: #977393;
+}
+
+.icon-exit, .icon-coin-dollar{
+    color: #D1495B;
+}
+
+.icon-share2, .icon-arrow-left{
+    color: #8FC93A;
+}
+
+.icon-bin, .icon-bug{
+    color: #ff3860;
+}
+
+.dialogue-item .subdialogues{
+    display: inline-block;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltip-text {
+  width: auto;
+  background-color: #3273dc;
+  color: #fff;
+  text-align: center;
+  padding: 4px 12px 8px 12px;
+  border-radius: 6px;
+  opacity: 0.9;
+  min-width: 80px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 140%;
+  left: 50%;
+  text-transform:capitalize;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #3273dc transparent transparent transparent;
+}

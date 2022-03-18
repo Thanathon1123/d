@@ -1,0 +1,103 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="./js/bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/icons.css">
+</head>
+
+<body>
+    <div class="dialogue-management-div">
+        <div class="file-loader-wrapper inline-block">
+            <div class="file-loader field">
+                <div class="file has-name">
+                    <label class="file-label">
+                        <input class="file-input" type="file" name="resume">
+                        <span class="file-cta">
+                            <span class="file-label">Choose a file…</span>
+                        </span>
+                        <span class="file-name"></span>
+                    </label>
+                </div>
+            </div>
+            <input class="export-action button is-link" type="button" value="export" />
+            <span>
+                <span class="button icon-bug show-validation-errors hidden"><span></span></span>
+            </span>
+            <div class="tree-validation-errors hidden"></div>
+        </div>
+        <div class="npc-dialogue">
+            <div class="field">
+                <div class="control">
+                    <div class="select"><select class="npcs-list"></select></div>
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <button class="create-new-dialogue button is-success">New</button>
+                </div>
+            </div>
+            <div>
+                <div class="field">
+                    <label class="label">Npc ID:</label>
+                    <div class="control">
+                        <input type="text" class="npc-id input" value="" />
+                    </div>
+                    <div class="control">
+                        <button class="show-delete-modal button is-danger">Delete</button>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label wide">Greeting:</label>
+                    <div class="control">
+                        <textarea rows="3" cols="5" class="npc-greeting textarea" value=""></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div></div>
+        <div class="modal delete-dialogue-confirmation">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <div class="box">
+                    <label class="label">Are you sure you want to delete dialogue tree ?</label>
+                    <div class="modal-actions">
+                        <button class="button is-light close-modal">no</button>
+                        <button class="button is-danger delete-dialogue">yes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal delete-sudbialogue-confirmation">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <div class="box">
+                    <label class="label">Are you sure you want to delete this dialogue and its children ?</label>
+                    <div class="modal-actions">
+                        <button class="button is-light close-modal">no</button>
+                        <button class="button is-danger delete-subdialogue">yes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dialogue-tree-controls">
+        <div>
+            <div class="field">
+                <div class="control">
+                    <div class="select"><select class="dialogue-list"></select></div>
+                </div>
+            </div>
+            <div class="field">
+                <span class="button icon-plus add-dialogue"></span>
+            </div>
+        </div>
+    </div>
+    <div id="dialogue-tree" class="dialogue-tree">
+
+    </div>
+
+</body>
+
+</html>
